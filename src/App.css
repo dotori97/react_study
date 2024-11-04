@@ -1,38 +1,98 @@
-.App {
+/* 전체 레이아웃 설정 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 제목 스타일 */
+h1 {
+  color: #343a40;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* StudyLogForm 스타일 */
+form {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* textarea 스타일 */
+textarea {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+/* textarea 포커스 스타일 */
+textarea:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+/* 버튼 크기 조정 */
+.small-button {
+  padding: 8px 10px; /* 버튼의 세로 패딩을 줄여 크기를 맞춤 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 버튼 호버 스타일 */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* StudyLogList 스타일 */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 리스트 항목 스타일 */
+li {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+/* 리스트 항목 호버 스타일 */
+li:hover {
+  background-color: #e9ecef;
+}
+
+/* 선택된 로그 스타일 */
+li.selected {
+  background-color: #f0f8ff;
+  border-color: #80bdff;
+}
+
+/* StudyLogDetail 스타일 */
+h2 {
+  margin: 0 0 10px 0;
+  color: #343a40;
+}
+
+p {
+  margin: 5px 0;
 }
